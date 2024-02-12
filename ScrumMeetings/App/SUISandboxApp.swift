@@ -8,8 +8,9 @@
 import SwiftUI
 
 @main
-struct SUISandboxApp: App {
+struct ScrumMeetingsApp: App {
     @StateObject var store = ScrumStore()
+    @State private var errorWrapper: ErrorWrapper?
     
     var body: some Scene {
         WindowGroup {
@@ -18,7 +19,8 @@ struct SUISandboxApp: App {
                     do {
                         try await store.save(scrums: store.scrums)
                     } catch {
-                        fatalError(error.localizedDescription)
+                        errorWrapper = ErrorWrapper(error: error,
+                                                    guidance: "Try again later.")
                     }
                 }
             }
@@ -26,9 +28,16 @@ struct SUISandboxApp: App {
                 do {
                     try await store.load()
                 } catch {
-                    fatalError(error.localizedDescription)
+                    errorWrapper = ErrorWrapper(error: error,
+                                                guidance: "App will load sample data and continue")
                 }
             }
+            .sheet(item: $errorWrapper) {
+                store.scrums = DailyScrum.sampleData
+            } content: { wrapper in
+                ErrorView(errorWrapper: wrapper)
+            }
+
         }
     }
 }
