@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A368C4702B7D817600BFFA66 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A368C46D2B7D817600BFFA66 /* 3.png */; };
+		A368C4712B7D817600BFFA66 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A368C46E2B7D817600BFFA66 /* 1.png */; };
+		A368C4722B7D817600BFFA66 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A368C46F2B7D817600BFFA66 /* 2.png */; };
+		A368C4742B7D819300BFFA66 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = A368C4732B7D819300BFFA66 /* 4.png */; };
 		A37E23DB2B7A8B8E00A6EC26 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E23DA2B7A8B8E00A6EC26 /* ErrorWrapper.swift */; };
 		A37E23DD2B7A8CA800A6EC26 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E23DC2B7A8CA800A6EC26 /* ErrorView.swift */; };
 		A37E23DF2B7A916A00A6EC26 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E23DE2B7A916A00A6EC26 /* MeetingTimerView.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A368C46D2B7D817600BFFA66 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		A368C46E2B7D817600BFFA66 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		A368C46F2B7D817600BFFA66 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		A368C4732B7D819300BFFA66 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		A37E23DA2B7A8B8E00A6EC26 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		A37E23DC2B7A8CA800A6EC26 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		A37E23DE2B7A916A00A6EC26 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
@@ -81,9 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A368C46C2B7D805A00BFFA66 /* github-images */ = {
+			isa = PBXGroup;
+			children = (
+				A368C4732B7D819300BFFA66 /* 4.png */,
+				A368C46D2B7D817600BFFA66 /* 3.png */,
+				A368C46F2B7D817600BFFA66 /* 2.png */,
+				A368C46E2B7D817600BFFA66 /* 1.png */,
+			);
+			path = "github-images";
+			sourceTree = "<group>";
+		};
 		A3E07CB72B7A6199008C4756 = {
 			isa = PBXGroup;
 			children = (
+				A368C46C2B7D805A00BFFA66 /* github-images */,
 				A3E07CC22B7A6199008C4756 /* ScrumMeetings */,
 				A3E07CC12B7A6199008C4756 /* Products */,
 			);
@@ -240,8 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3E07CFE2B7A61FD008C4756 /* ding.wav in Resources */,
+				A368C4742B7D819300BFFA66 /* 4.png in Resources */,
+				A368C4712B7D817600BFFA66 /* 1.png in Resources */,
 				A3E07CFD2B7A61FD008C4756 /* Assets.xcassets in Resources */,
+				A368C4722B7D817600BFFA66 /* 2.png in Resources */,
 				A3E07CCB2B7A619A008C4756 /* Preview Assets.xcassets in Resources */,
+				A368C4702B7D817600BFFA66 /* 3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
